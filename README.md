@@ -92,16 +92,6 @@ The canonical packaged benchmark files are:
 - `results/benchmark_500.csv`
 - `results/benchmark_500_manifest.json`
 
-```mermaid
-flowchart TD
-    A[Push to GitHub] --> B[Basic GitHub Checks]
-    B --> C[Python Syntax Check]
-    B --> D[Benchmark Artifact Check]
-    B --> E[Firmware Build Check]
-    E --> F[CI Passes]
-    F --> G[Full Renode Benchmark Run Locally]
-```
-
 ## Train the CNN
 
 Run a quick smoke test:
