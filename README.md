@@ -97,22 +97,6 @@ To run one smaller manual test:
 python scripts/run_renode_full_uart.py --dataset-count 10 --dataset-offset 0 --macs-per-cycle 4 --timeout 1200
 ```
 
-## Suggested GitHub Publish Steps
+## Repository Notes
 
-Initialize Git if needed:
-
-```bash
-git init
-git add .
-git commit -m "Clean RISC-V edge AI cat dog classifier project"
-```
-
-Then create an empty repository on GitHub and push:
-
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR-USER/YOUR-REPO.git
-git push -u origin main
-```
-
-Do not commit `venv/` or `data/`; they are already excluded in `.gitignore`.
+The repository does not include `venv/` or `data/` because the Python environment and CIFAR-10 dataset can be recreated locally.
