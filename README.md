@@ -81,6 +81,27 @@ The full local benchmark wrapper is:
 
 Note: the full wrapper requires Renode, the RISC-V toolchain, and local CIFAR-10 data. It can take a long time.
 
+## Basic Checks and Local Verification
+
+GitHub Actions runs only basic checks for this repository. It checks Python syntax, verifies the packaged benchmark artifacts, and builds the firmware with a RISC-V GCC toolchain.
+
+The CI workflow does not reproduce the full Renode benchmark. Full benchmark verification should be done locally with Renode installed.
+
+The canonical packaged benchmark files are:
+
+- `results/benchmark_500.csv`
+- `results/benchmark_500_manifest.json`
+
+```mermaid
+flowchart TD
+    A[Push to GitHub] --> B[Basic GitHub Checks]
+    B --> C[Python Syntax Check]
+    B --> D[Benchmark Artifact Check]
+    B --> E[Firmware Build Check]
+    E --> F[CI Passes]
+    F --> G[Full Renode Benchmark Run Locally]
+```
+
 ## Train the CNN
 
 Run a quick smoke test:
