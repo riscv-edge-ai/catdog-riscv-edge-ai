@@ -1,39 +1,89 @@
 # RISC-V Edge AI Cat/Dog Classifier
 
-This project trains a small convolutional neural network (CNN) to classify CIFAR-10 cat and dog images, exports quantized weights for firmware, and runs the model in a Renode-based RISC-V simulation flow.
+> **Simulation scope:** This project reports Renode simulation / Renode-modeled results only. No physical FPGA hardware measurements are reported unless separately verified.
 
-## What is included
+This project trains a small PyTorch CNN for CIFAR-10 cat/dog classification, exports quantized firmware headers, and evaluates a bare-metal RISC-V inference flow in Renode.
 
-- `train_catdog.py` trains `TinyCatDogNet` with PyTorch and exports firmware weight/LUT headers.
-- `firmware/` contains the bare-metal RISC-V inference code.
-- `scripts/export_eval_dataset.py` exports CIFAR-10 cat/dog test images for Renode.
-- `scripts/run_renode_full_uart.py` runs the Renode benchmark and saves UART logs.
-- `results/` contains packaged benchmark outputs from previous runs.
-- `best_catdog.pth` is a saved trained PyTorch model checkpoint.
+## Architecture
 
-The local `venv/` and downloaded `data/` directory are intentionally ignored by Git because they are large and can be recreated.
+```mermaid
+flowchart LR
+    A[PyTorch training] --> B[Quantized export / firmware headers]
+    B --> C[Bare-metal RISC-V firmware]
+    C --> D[Renode platform]
+    D --> E[Benchmark CSV / manifest results]
+```
+
+## Repository Layout
+
+- `train_catdog.py` trains `TinyCatDogNet` and exports Q8.8 firmware weight/LUT headers.
+- `firmware/` contains the bare-metal RISC-V inference code and linker script.
+- `renode/` contains the Renode platform and run scripts.
+- `scripts/` contains dataset export, Renode benchmark, and artifact verification tools.
+- `results/` contains Renode simulation benchmark artifacts from previous runs.
+- `best_catdog.pth` is a saved PyTorch model checkpoint.
+
+The local `venv/` and downloaded `data/` directory are not included because they can be recreated.
 
 ## Requirements
 
 - Python 3.10 or newer
-- PyTorch and torchvision
-- NumPy
-- RISC-V GCC toolchain, available as `riscv32-unknown-elf-gcc`
-- Renode, for the simulation benchmark
+- Python packages in `requirements.txt`
+- RISC-V bare-metal GCC toolchain, such as `riscv32-unknown-elf-gcc`
+- Renode, for simulation runs
 
-## Setup
-
-Create a virtual environment and install the Python packages:
+## Quick Start From Fresh Clone
 
 ```bash
+git clone https://github.com/riscv-edge-ai/catdog-riscv-edge-ai.git
+cd catdog-riscv-edge-ai
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+python -m py_compile train_catdog.py scripts/*.py
 ```
+
+Build the firmware after installing a compatible RISC-V toolchain:
+
+```bash
+make -C firmware
+```
+
+Prepare a small local dataset export after CIFAR-10 has been downloaded by the training script or placed under `data/`:
+
+```bash
+python scripts/export_eval_dataset.py --count 10
+```
+
+Run one small Renode simulation after installing Renode and the RISC-V toolchain:
+
+```bash
+python scripts/run_renode_full_uart.py --dataset-count 10 --dataset-offset 0 --macs-per-cycle 4 --timeout 1200
+```
+
+Verify the checked-in benchmark artifacts:
+
+```bash
+python scripts/verify_benchmark_consistency.py
+```
+
+Regenerate packaged benchmark artifacts after local CIFAR-10 data is available:
+
+```bash
+python scripts/build_chunked_submission_artifacts.py
+```
+
+The full local benchmark wrapper is:
+
+```bash
+./run_benchmark.sh
+```
+
+Note: the full wrapper requires Renode, the RISC-V toolchain, and local CIFAR-10 data. It can take a long time.
 
 ## Train the CNN
 
-Run a quick smoke test with one epoch:
+Run a quick smoke test:
 
 ```bash
 python train_catdog.py --epochs 1
@@ -45,58 +95,72 @@ Run the full training flow:
 python train_catdog.py --epochs 100
 ```
 
-The training script downloads CIFAR-10 into `data/`, filters it to cats and dogs, trains the CNN, saves `best_catdog.pth`, and regenerates:
+Training downloads CIFAR-10 into `data/`, filters it to cats and dogs, saves `best_catdog.pth`, and regenerates:
 
 - `firmware/include/weights.h`
 - `firmware/lut/relu_lut.h`
 - `firmware/lut/sigmoid_lut.h`
 
-## Build the Firmware
+## Benchmark Results
 
-After training or using the included generated headers, build the RISC-V firmware:
+These are Renode simulation / Renode-modeled results only. They are not physical FPGA hardware measurements.
 
-```bash
-make -C firmware
+The canonical packaged 500-image benchmark is aggregated from three preserved Renode UART logs, described in `results/benchmark_500_manifest.json` and `results/BENCHMARK_ARTIFACTS.md`.
+
+| Metric | Value | Source |
+| --- | ---: | --- |
+| Dataset count | 500 images | `results/benchmark_500_manifest.json` (`row_count`) |
+| Renode-modeled Q8.8 accelerator accuracy | 73.600% | `results/table1_accuracy_500.csv` |
+| Renode-modeled software-only accuracy | 73.600% | `results/table1_accuracy_500.csv` |
+| Float reference accuracy | 73.600% | `results/float_reference_accuracy.csv` |
+| Average Renode-modeled accelerator cycles | 212862.602 | `results/benchmark_500_manifest.json` |
+| Average Renode software-only cycles | 2895686.372 | `results/benchmark_500_manifest.json` |
+| Speedup, software cycles / accelerator cycles | 13.603547x | computed from `results/benchmark_500.csv` row averages |
+
+The source chunk metadata in `results/benchmark_500_manifest.json` lists:
+
+- offset `0`, count `200`, `macs_per_cycle=4`
+- offset `200`, count `200`, `macs_per_cycle=4`
+- offset `400`, count `100`, `macs_per_cycle=4`
+
+## Sample Output
+
+Excerpt from `results/chunked/renode_direct_uart_offset_0400_count_0100_mpc_4.txt`:
+
+```text
+=== Average Benchmark Summary ===
+Images: 100
+Average accelerator cycles: 212789
+Average software cycles: 2895682
+Software average latency: 115.827 ms
+Software average FPS: 8.633
+Accelerator average latency: 8.511 ms
+Accelerator average FPS: 117.487
+Average modeled accelerator cycles: 156838
+Average BRAM accesses: 6146
+Accelerator accuracy: 71/100
+Software accuracy: 71/100
+Done.
 ```
 
-This produces `firmware/catdog_inference.elf`.
+This sample is one 100-image Renode chunk, not the full 500-image aggregate.
 
-## Export Test Images
+## Known Limitations
 
-Create the binary image blob and labels used by the firmware/Renode flow:
+- Results are Renode simulation / Renode-modeled results only.
+- No physical FPGA hardware measurements are included in this repository.
+- Accelerator timing is modeled in the Renode platform.
+- The model and dataset subset are small and educational.
+- This is not a production AI system.
+- This is not a fully optimized commercial accelerator.
+- Full Renode runs depend on local Renode, toolchain, and dataset availability.
 
-```bash
-python scripts/export_eval_dataset.py --count 500
-```
+## Release Readiness
 
-This writes:
+For a `v0.1.0` release, create the tag only after:
 
-- `renode/test_images.bin`
-- `firmware/include/eval_dataset_meta.h`
-- `results/eval_dataset_manifest.csv`
-
-## Run the Renode Benchmark
-
-For a full packaged 500-image benchmark, run:
-
-```bash
-./run_benchmark.sh
-```
-
-The benchmark is split into three Renode runs because the full 500-image UART run can be unstable on some PCs:
-
-- offset `0`, count `200`
-- offset `200`, count `200`
-- offset `400`, count `100`
-
-The script saves chunk logs, rebuilds `results/benchmark_500.csv`, and verifies consistency.
-
-To run one smaller manual test:
-
-```bash
-python scripts/run_renode_full_uart.py --dataset-count 10 --dataset-offset 0 --macs-per-cycle 4 --timeout 1200
-```
-
-## Repository Notes
-
-The repository does not include `venv/` or `data/` because the Python environment and CIFAR-10 dataset can be recreated locally.
+- README is updated.
+- `LICENSE` exists.
+- CI passes.
+- Benchmark artifacts are verified.
+- No unsupported physical hardware claims remain.

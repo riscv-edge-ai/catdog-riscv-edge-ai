@@ -79,32 +79,69 @@ def get_cat_dog_dataloaders(data_dir=DEFAULT_DATA_DIR, batch_size=64, download=T
     return trainloader, testloader
 
 
-def quantize_to_int8(tensor):
-    max_val = tensor.abs().max().item()
-    scale = 127.0 / max_val if max_val != 0 else 1.0
-    quantized = torch.round(tensor * scale).clamp(-128, 127).to(torch.int8)
-    return quantized, scale
+def fold_conv_bn(conv_w, bn_gamma, bn_beta, running_mean, running_var, eps):
+    denom = torch.sqrt(running_var + eps)
+    scale = bn_gamma / denom
+    folded_weight = conv_w * scale.view(-1, 1, 1, 1)
+    folded_bias = bn_beta - scale * running_mean
+    return folded_weight, folded_bias
+
+
+def quantize_to_q8_8(tensor):
+    return torch.round(tensor * 256.0).clamp(-32768, 32767).to(torch.int16)
+
+
+def write_c_array(handle, name, data):
+    flat_data = data.flatten().cpu().numpy()
+    handle.write(f"const int16_t {name}[{len(flat_data)}] = {{\n    ")
+    for i, val in enumerate(flat_data):
+        handle.write(f"{int(val)}, ")
+        if (i + 1) % 16 == 0:
+            handle.write("\n    ")
+    handle.write("\n};\n\n")
 
 
 def export_weights_h(model, filepath):
     filepath = Path(filepath)
     filepath.parent.mkdir(parents=True, exist_ok=True)
     with filepath.open("w", encoding="ascii") as f:
-        f.write("// [GENERATED] INT8 model weights\n")
+        f.write("// [GENERATED] Q8.8 folded weights for firmware\n")
         f.write("#ifndef WEIGHTS_H\n#define WEIGHTS_H\n\n")
         f.write("#include <stdint.h>\n\n")
 
-        for name, param in model.named_parameters():
-            clean_name = name.replace('.', '_')
-            q_param, scale = quantize_to_int8(param.detach().cpu())
-            flat_data = q_param.flatten().numpy()
-            f.write(f"// Layer: {name} | Scale: {scale:.6f}\n")
-            f.write(f"const int8_t {clean_name}[{len(flat_data)}] = {{\n    ")
-            for i, val in enumerate(flat_data):
-                f.write(f"{val}, ")
-                if (i + 1) % 16 == 0:
-                    f.write("\n    ")
-            f.write("\n};\n\n")
+        conv1_w, conv1_b = fold_conv_bn(
+            model.features[0].weight.data,
+            model.features[1].weight.data,
+            model.features[1].bias.data,
+            model.features[1].running_mean,
+            model.features[1].running_var,
+            model.features[1].eps,
+        )
+        conv2_w, conv2_b = fold_conv_bn(
+            model.features[4].weight.data,
+            model.features[5].weight.data,
+            model.features[5].bias.data,
+            model.features[5].running_mean,
+            model.features[5].running_var,
+            model.features[5].eps,
+        )
+        conv3_w, conv3_b = fold_conv_bn(
+            model.features[8].weight.data,
+            model.features[9].weight.data,
+            model.features[9].bias.data,
+            model.features[9].running_mean,
+            model.features[9].running_var,
+            model.features[9].eps,
+        )
+
+        write_c_array(f, "conv1_weight", quantize_to_q8_8(conv1_w))
+        write_c_array(f, "conv1_bias", quantize_to_q8_8(conv1_b))
+        write_c_array(f, "conv2_weight", quantize_to_q8_8(conv2_w))
+        write_c_array(f, "conv2_bias", quantize_to_q8_8(conv2_b))
+        write_c_array(f, "conv3_weight", quantize_to_q8_8(conv3_w))
+        write_c_array(f, "conv3_bias", quantize_to_q8_8(conv3_b))
+        write_c_array(f, "fc_weight", quantize_to_q8_8(model.classifier.weight.data))
+        write_c_array(f, "fc_bias", quantize_to_q8_8(model.classifier.bias.data))
         f.write("#endif // WEIGHTS_H\n")
     print(f"[*] Saved weights to {filepath}")
 
