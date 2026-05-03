@@ -1,0 +1,1719 @@
+
+=============================================
+ ECP5 RISC-V SoC - Cat/Dog Classifier
+ Renode-Modeled Accelerator Benchmark
+=============================================
+
+=== Image 0 (src 0) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895716
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 1 (src 1) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895610
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 2 (src 2) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895572
+Simulated latency: 115.822 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 3 (src 3) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895653
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 4 (src 4) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895707
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 5 (src 5) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895659
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 6 (src 6) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Simulated latency: 8.499 ms
+Simulated FPS: 117.649
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895608
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 7 (src 7) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895730
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 8 (src 8) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895620
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 9 (src 9) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214978
+Simulated latency: 8.599 ms
+Simulated FPS: 116.290
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895768
+Simulated latency: 115.830 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 10 (src 10) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Simulated latency: 8.600 ms
+Simulated FPS: 116.278
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895763
+Simulated latency: 115.830 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 11 (src 11) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895711
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 12 (src 12) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895713
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 13 (src 13) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895702
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 14 (src 14) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895735
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 15 (src 15) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895709
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 16 (src 16) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895614
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 17 (src 17) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895677
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 18 (src 18) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895648
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 19 (src 19) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895688
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 20 (src 20) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895556
+Simulated latency: 115.822 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 21 (src 21) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895679
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 22 (src 22) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Simulated latency: 8.599 ms
+Simulated FPS: 116.285
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895701
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 23 (src 23) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214984
+Simulated latency: 8.599 ms
+Simulated FPS: 116.287
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895676
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 24 (src 24) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 25 (src 25) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895741
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 26 (src 26) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895698
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 27 (src 27) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895699
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 28 (src 28) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895765
+Simulated latency: 115.830 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 29 (src 29) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895706
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 30 (src 30) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895756
+Simulated latency: 115.830 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 31 (src 31) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212484
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895616
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 32 (src 32) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895679
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 33 (src 33) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895729
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 34 (src 34) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895690
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 35 (src 35) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895642
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 36 (src 36) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Simulated latency: 8.499 ms
+Simulated FPS: 117.649
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895544
+Simulated latency: 115.821 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 37 (src 37) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895667
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 38 (src 38) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Simulated latency: 8.599 ms
+Simulated FPS: 116.285
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895724
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 39 (src 39) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895698
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 40 (src 40) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895714
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 41 (src 41) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895741
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 42 (src 42) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895718
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 43 (src 43) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895695
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 44 (src 44) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895783
+Simulated latency: 115.831 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 45 (src 45) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214991
+Simulated latency: 8.599 ms
+Simulated FPS: 116.283
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895718
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 46 (src 46) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895712
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 47 (src 47) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895653
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 48 (src 48) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895733
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 49 (src 49) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895770
+Simulated latency: 115.830 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 50 (src 50) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Simulated latency: 8.600 ms
+Simulated FPS: 116.278
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895650
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 51 (src 51) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895725
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 52 (src 52) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214995
+Simulated latency: 8.599 ms
+Simulated FPS: 116.281
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895740
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 53 (src 53) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895733
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 54 (src 54) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895717
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 55 (src 55) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895668
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 56 (src 56) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895690
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 57 (src 57) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 58 (src 58) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895639
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 59 (src 59) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895706
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 60 (src 60) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895701
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 61 (src 61) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895592
+Simulated latency: 115.823 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 62 (src 62) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895578
+Simulated latency: 115.823 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 63 (src 63) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895691
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 64 (src 64) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895704
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 65 (src 65) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895723
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 66 (src 66) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895728
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 67 (src 67) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895737
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 68 (src 68) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 69 (src 69) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895597
+Simulated latency: 115.823 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 70 (src 70) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895737
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 71 (src 71) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895665
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 72 (src 72) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895704
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 73 (src 73) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895687
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 74 (src 74) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895705
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 75 (src 75) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895694
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 76 (src 76) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214995
+Simulated latency: 8.599 ms
+Simulated FPS: 116.281
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895658
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 77 (src 77) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895610
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 78 (src 78) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Simulated latency: 8.599 ms
+Simulated FPS: 116.285
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895739
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 79 (src 79) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212485
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895704
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 80 (src 80) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895748
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 81 (src 81) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214978
+Simulated latency: 8.599 ms
+Simulated FPS: 116.290
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895669
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 82 (src 82) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895687
+Simulated latency: 115.827 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 83 (src 83) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895673
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 84 (src 84) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895582
+Simulated latency: 115.823 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 85 (src 85) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895607
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 86 (src 86) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895640
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 87 (src 87) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214984
+Simulated latency: 8.599 ms
+Simulated FPS: 116.287
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895745
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 88 (src 88) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895728
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 89 (src 89) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895726
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 90 (src 90) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895633
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 91 (src 91) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212497
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895632
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 92 (src 92) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Simulated latency: 8.499 ms
+Simulated FPS: 117.650
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895654
+Simulated latency: 115.826 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Image 93 (src 93) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212491
+Simulated latency: 8.499 ms
+Simulated FPS: 117.652
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895703
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 94 (src 94) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Simulated latency: 8.499 ms
+Simulated FPS: 117.653
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895548
+Simulated latency: 115.821 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 95 (src 95) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212484
+Simulated latency: 8.499 ms
+Simulated FPS: 117.655
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895732
+Simulated latency: 115.829 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: DOG
+
+=== Image 96 (src 96) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Simulated latency: 8.499 ms
+Simulated FPS: 117.657
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895599
+Simulated latency: 115.823 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 97 (src 97) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212478
+Simulated latency: 8.499 ms
+Simulated FPS: 117.659
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895709
+Simulated latency: 115.828 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: DOG
+
+=== Image 98 (src 98) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Simulated latency: 8.500 ms
+Simulated FPS: 117.646
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895611
+Simulated latency: 115.824 ms
+Simulated FPS: 8.633
+Prediction: DOG
+Expected: CAT
+
+=== Image 99 (src 99) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212498
+Simulated latency: 8.499 ms
+Simulated FPS: 117.648
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+BRAM accesses: 6146
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895635
+Simulated latency: 115.825 ms
+Simulated FPS: 8.633
+Prediction: CAT
+Expected: CAT
+
+=== Average Benchmark Summary ===
+Images: 100
+Average accelerator cycles: 212789
+Average software cycles: 2895682
+Software average latency: 115.827 ms
+Software average FPS: 8.633
+Accelerator average latency: 8.511 ms
+Accelerator average FPS: 117.487
+Average modeled accelerator cycles: 156838
+Average BRAM accesses: 6146
+Accelerator accuracy: 71/100
+Software accuracy: 71/100
+Done.

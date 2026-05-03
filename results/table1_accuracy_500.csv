@@ -1,0 +1,5 @@
+dataset_size,metric,accuracy_percent,ci_low,ci_high
+500,Renode-modeled Q8.8 accelerator,73.600,69.567,77.273
+500,Renode-modeled software-only,73.600,69.567,77.273
+500,Float reference,73.600,69.567,77.273
+500,Float-vs-Q8.8 delta,0.000,,

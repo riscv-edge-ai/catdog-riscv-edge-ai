@@ -1,0 +1,357 @@
+cpu: CPU.RiscV32 @ sysbus
+    cpuType: "rv32im"
+
+imem: Memory.MappedMemory @ sysbus 0x00000000
+    size: 0x10000
+
+dmem: Memory.MappedMemory @ sysbus 0x00040000
+    size: 0x10000
+
+sram: Memory.MappedMemory @ sysbus 0x00100000
+    size: 0x00400000
+
+accel: Python.PythonPeripheral @ sysbus 0x000C0000
+    size: 0x50
+    initable: true
+    script: '''
+import math
+import os
+import System
+from Antmicro.Renode.Time import TimeInterval, TimeStamp
+if request.IsInit:
+    machine = emulationManager.Instance.CurrentEmulation.Machines[0]
+    sysbus = emulationManager.Instance.CurrentEmulation.Machines[0].SystemBus
+    input_u16 = 0
+    result_u16 = 0
+    func = 0
+    status = 1
+    counter = 0
+    src_addr = 0
+    dst_addr = 0
+    length = 0
+    conv_in = 0
+    conv_k = 0
+    conv_bias = 0
+    conv_out = 0
+    conv_chin = 0
+    conv_h = 0
+    conv_w = 0
+    conv_chout = 0
+    conv_status = 1
+    modeled_cycles = 0
+
+    # These counters define a Renode-modeled timing function. Completion is
+    # delayed using Renode's LocalTimeSource API so the CLINT timer advances in
+    # virtual time while the CPU waits on the accelerator status register. The
+    # modeled_cycles register remains as a diagnostic counter only.
+    #
+    # Numerical behavior should follow the firmware implementation as closely as
+    # possible. In particular:
+    # - sigmoid uses the same piecewise-linear Q8.8 approximation as
+    #   firmware/src/nn_ops.c
+    # - convolution accumulation is modeled with signed 32-bit wrap semantics
+    #   before the final Q8.8 rescale and int16 clamp
+    macs_per_cycle = max(1, int(os.environ.get("RENODE_MACS_PER_CYCLE", "4")))
+    activation_elems_per_cycle = max(
+        1, int(os.environ.get("RENODE_ACTIVATION_ELEMS_PER_CYCLE", str(macs_per_cycle * 8)))
+    )
+    bytes_per_cycle = max(1, int(os.environ.get("RENODE_BYTES_PER_CYCLE", "8")))
+    conv_startup_cycles = max(0, int(os.environ.get("RENODE_CONV_STARTUP_CYCLES", "40")))
+    batch_startup_cycles = max(0, int(os.environ.get("RENODE_BATCH_STARTUP_CYCLES", "12")))
+    cpu_frequency_hz = max(1, int(os.environ.get("RENODE_CPU_HZ", "25000000")))
+
+def to_s16(v):
+    v = v & 0xFFFF
+    return v - 0x10000 if v & 0x8000 else v
+
+def to_u16(v):
+    return v & 0xFFFF
+
+def to_s32(v):
+    v = v & 0xFFFFFFFF
+    return v - 0x100000000 if v & 0x80000000 else v
+
+def add_s32(a, b):
+    return to_s32(a + b)
+
+def mul_s32(a, b):
+    return to_s32(a * b)
+
+def compute(x, func):
+    if func == 0:
+        y = x if x > 0 else 0
+    elif func == 1:
+        if x <= -1024:
+            y = 0
+        elif x >= 1024:
+            y = 256
+        else:
+            y = int(x / 8) + 128
+            if y < 0:
+                y = 0
+            if y > 256:
+                y = 256
+    elif func == 2:
+        xf = x / 256.0
+        y = int(round(math.tanh(xf) * 256))
+    else:
+        y = 0
+    if y < -32768: y = -32768
+    if y > 32767: y = 32767
+    return y
+
+def b2i(x):
+    try:
+        return ord(x)
+    except TypeError:
+        return x
+
+def read_s16_list(addr, count):
+    data = bytes(sysbus.ReadBytes(addr, count * 2))
+    vals = []
+    for i in range(0, len(data), 2):
+        if i + 1 >= len(data):
+            break
+        lo = b2i(data[i])
+        hi = b2i(data[i + 1])
+        v = lo | (hi << 8)
+        if v & 0x8000:
+            v -= 0x10000
+        vals.append(v)
+    if len(vals) < count:
+        vals.extend([0] * (count - len(vals)))
+    return vals
+
+def write_s16_list(addr, vals, count):
+    out = []
+    for v in vals[:count]:
+        v = v & 0xFFFF
+        out.append(v & 0xFF)
+        out.append((v >> 8) & 0xFF)
+    sysbus.WriteBytes(System.Array[System.Byte](out), addr)
+
+def ceil_div(a, b):
+    return (a + b - 1) // b
+
+def count_same_conv_macs(ch_in, h, w, ch_out):
+    taps = 0
+    for oh in range(h):
+        for ow in range(w):
+            for ky in range(3):
+                in_y = oh + ky - 1
+                if in_y < 0 or in_y >= h:
+                    continue
+                for kx in range(3):
+                    in_x = ow + kx - 1
+                    if in_x < 0 or in_x >= w:
+                        continue
+                    taps += 1
+    return taps * ch_in * ch_out
+
+def modeled_batch_cycles(length):
+    bytes_moved = length * 4
+    compute_cycles = ceil_div(length, activation_elems_per_cycle)
+    transfer_cycles = ceil_div(bytes_moved, bytes_per_cycle)
+    return batch_startup_cycles + compute_cycles + transfer_cycles
+
+def modeled_conv_cycles(ch_in, h, w, ch_out):
+    mac_count = count_same_conv_macs(ch_in, h, w, ch_out)
+    input_bytes = ch_in * h * w * 2
+    weight_bytes = ch_out * ch_in * 9 * 2
+    bias_bytes = ch_out * 2
+    output_bytes = ch_out * h * w * 2
+    transfer_cycles = ceil_div(input_bytes + weight_bytes + bias_bytes + output_bytes, bytes_per_cycle)
+    compute_cycles = ceil_div(mac_count, macs_per_cycle)
+    return conv_startup_cycles + transfer_cycles + compute_cycles
+
+def schedule_completion(delay_cycles, completion):
+    global modeled_cycles
+    modeled_cycles += delay_cycles
+    if delay_cycles <= 0:
+        completion(None)
+        return
+    delay_ns = ceil_div(delay_cycles * 1000000000, cpu_frequency_hz)
+    if delay_ns <= 0:
+        delay_ns = 1
+    interval = TimeInterval.FromNanoseconds(delay_ns)
+    target = TimeStamp(machine.LocalTimeSource.ElapsedVirtualTime + interval, machine.LocalTimeSource.Domain)
+    machine.LocalTimeSource.ExecuteInSyncedState(System.Action[TimeStamp](completion), target)
+
+def conv2d_same(input_arr, ch_in, h, w, kernel, bias, ch_out):
+    kh = 3
+    kw = 3
+    pad = 1
+    out = [0] * (ch_out * h * w)
+    for oc in range(ch_out):
+        b = bias[oc] if oc < len(bias) else 0
+        for oh in range(h):
+            for ow in range(w):
+                s = 0
+                for ic in range(ch_in):
+                    for ky in range(kh):
+                        in_y = oh + ky - pad
+                        if in_y < 0 or in_y >= h:
+                            continue
+                        for kx in range(kw):
+                            in_x = ow + kx - pad
+                            if in_x < 0 or in_x >= w:
+                                continue
+                            in_idx = ic * h * w + in_y * w + in_x
+                            k_idx = oc * ch_in * kh * kw + ic * kh * kw + ky * kw + kx
+                            s = add_s32(s, mul_s32(input_arr[in_idx], kernel[k_idx]))
+                s = add_s32(to_s32(s) >> 8, b)
+                if s < -32768: s = -32768
+                if s > 32767: s = 32767
+                out[oc * h * w + oh * w + ow] = s
+    return out
+
+if request.IsWrite:
+    off = request.Offset
+    if off == 0x08:
+        func = request.Value & 0x3
+    elif off == 0x00:
+        input_u16 = request.Value & 0xFFFF
+        x = to_s16(input_u16)
+        y = compute(x, func)
+        result_u16 = to_u16(y)
+        status = 1
+        counter += 1
+    elif off == 0x0C:
+        status = request.Value & 1
+    elif off == 0x10:
+        counter = request.Value
+    elif off == 0x14:
+        src_addr = request.Value
+    elif off == 0x18:
+        dst_addr = request.Value
+    elif off == 0x1C:
+        length = request.Value
+    elif off == 0x20:
+        if request.Value & 1:
+            status = 0
+            if length > 0 and src_addr != 0:
+                if dst_addr == 0:
+                    dst_addr = src_addr
+                active_src = src_addr
+                active_dst = dst_addr
+                active_length = length
+                data = bytes(sysbus.ReadBytes(active_src, active_length * 2))
+                vals = []
+                for i in range(0, len(data), 2):
+                    if i + 1 >= len(data):
+                        break
+                    lo = b2i(data[i])
+                    hi = b2i(data[i + 1])
+                    v = lo | (hi << 8)
+                    if v & 0x8000:
+                        v -= 0x10000
+                    vals.append(v)
+                if len(vals) < active_length:
+                    vals.extend([0] * (active_length - len(vals)))
+                for i in range(active_length):
+                    vals[i] = compute(vals[i], func)
+                out = []
+                for v in vals[:active_length]:
+                    v = v & 0xFFFF
+                    out.append(v & 0xFF)
+                    out.append((v >> 8) & 0xFF)
+                out_bytes = System.Array[System.Byte](out)
+                delay_cycles = modeled_batch_cycles(active_length)
+                def complete_batch(ts, dst=active_dst, processed=active_length, payload=out_bytes):
+                    global status, counter
+                    sysbus.WriteBytes(payload, dst)
+                    counter += processed
+                    status = 1
+                schedule_completion(delay_cycles, complete_batch)
+            else:
+                status = 1
+    elif off == 0x24:
+        conv_in = request.Value
+    elif off == 0x28:
+        conv_k = request.Value
+    elif off == 0x2C:
+        conv_bias = request.Value
+    elif off == 0x30:
+        conv_out = request.Value
+    elif off == 0x34:
+        conv_chin = request.Value
+    elif off == 0x38:
+        conv_h = request.Value
+    elif off == 0x3C:
+        conv_w = request.Value
+    elif off == 0x40:
+        conv_chout = request.Value
+    elif off == 0x44:
+        if request.Value & 1:
+            conv_status = 0
+            if conv_in != 0 and conv_out != 0 and conv_k != 0 and conv_chin > 0 and conv_h > 0 and conv_w > 0 and conv_chout > 0:
+                active_conv_out = conv_out
+                active_conv_chin = conv_chin
+                active_conv_h = conv_h
+                active_conv_w = conv_w
+                active_conv_chout = conv_chout
+                input_arr = read_s16_list(conv_in, active_conv_chin * active_conv_h * active_conv_w)
+                kernel = read_s16_list(conv_k, active_conv_chout * active_conv_chin * 9)
+                bias = read_s16_list(conv_bias, active_conv_chout) if conv_bias != 0 else [0] * active_conv_chout
+                out = conv2d_same(input_arr, active_conv_chin, active_conv_h, active_conv_w, kernel, bias, active_conv_chout)
+                out_count = active_conv_chout * active_conv_h * active_conv_w
+                delay_cycles = modeled_conv_cycles(active_conv_chin, active_conv_h, active_conv_w, active_conv_chout)
+                def complete_conv(ts, dst=active_conv_out, values=out, count=out_count):
+                    global conv_status
+                    write_s16_list(dst, values, count)
+                    conv_status = 1
+                schedule_completion(delay_cycles, complete_conv)
+            else:
+                conv_status = 1
+    elif off == 0x4C:
+        modeled_cycles = request.Value & 0xFFFFFFFF
+if request.IsRead:
+    off = request.Offset
+    if off == 0x00:
+        request.Value = input_u16
+    elif off == 0x04:
+        request.Value = result_u16
+    elif off == 0x08:
+        request.Value = func
+    elif off == 0x0C:
+        request.Value = status
+    elif off == 0x10:
+        request.Value = counter
+    elif off == 0x14:
+        request.Value = src_addr
+    elif off == 0x18:
+        request.Value = dst_addr
+    elif off == 0x1C:
+        request.Value = length
+    elif off == 0x20:
+        request.Value = 0
+    elif off == 0x24:
+        request.Value = conv_in
+    elif off == 0x28:
+        request.Value = conv_k
+    elif off == 0x2C:
+        request.Value = conv_bias
+    elif off == 0x30:
+        request.Value = conv_out
+    elif off == 0x34:
+        request.Value = conv_chin
+    elif off == 0x38:
+        request.Value = conv_h
+    elif off == 0x3C:
+        request.Value = conv_w
+    elif off == 0x40:
+        request.Value = conv_chout
+    elif off == 0x44:
+        request.Value = 0
+    elif off == 0x48:
+        request.Value = conv_status
+    elif off == 0x4C:
+        request.Value = modeled_cycles & 0xFFFFFFFF
+    else:
+        request.Value = 0
+'''
+
+clint: Timers.RiscVMachineTimer @ sysbus 0x02000000
+    frequency: 25000000
+
+uart: UART.LiteX_UART @ sysbus 0x000E0000

@@ -1,0 +1,9 @@
+include @./ecp5_platform.repl
+sysbus LoadELF @../firmware/catdog_inference.elf
+sysbus LoadBinary @./test_images.bin 0x00100000
+sysbus.uart CreateFileBackend "/tmp/ai_classification_renode_uart_output.txt" true
+sysbus.uart AddLineHook "Done." "monitor.Parse('pause'); monitor.Parse('quit')"
+start
+sleep 7200
+pause
+quit

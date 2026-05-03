@@ -1,0 +1,2419 @@
+
+=============================================
+ ECP5 RISC-V SoC - Cat/Dog Classifier
+ Renode-Modeled Accelerator Benchmark
+=============================================
+
+=== Image 0 (src 0) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895746
+Prediction: CAT
+Expected: CAT
+
+=== Image 1 (src 1) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895621
+Prediction: CAT
+Expected: CAT
+
+=== Image 2 (src 2) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895739
+Prediction: DOG
+Expected: DOG
+
+=== Image 3 (src 3) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895728
+Prediction: DOG
+Expected: DOG
+
+=== Image 4 (src 4) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895630
+Prediction: CAT
+Expected: DOG
+
+=== Image 5 (src 5) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895595
+Prediction: DOG
+Expected: DOG
+
+=== Image 6 (src 6) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895734
+Prediction: DOG
+Expected: DOG
+
+=== Image 7 (src 7) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Prediction: DOG
+Expected: DOG
+
+=== Image 8 (src 8) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895729
+Prediction: CAT
+Expected: DOG
+
+=== Image 9 (src 9) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Prediction: CAT
+Expected: CAT
+
+=== Image 10 (src 10) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214995
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895783
+Prediction: DOG
+Expected: CAT
+
+=== Image 11 (src 11) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895692
+Prediction: DOG
+Expected: CAT
+
+=== Image 12 (src 12) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895650
+Prediction: CAT
+Expected: CAT
+
+=== Image 13 (src 13) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895772
+Prediction: DOG
+Expected: CAT
+
+=== Image 14 (src 14) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895744
+Prediction: CAT
+Expected: CAT
+
+=== Image 15 (src 15) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895747
+Prediction: CAT
+Expected: CAT
+
+=== Image 16 (src 16) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895678
+Prediction: DOG
+Expected: DOG
+
+=== Image 17 (src 17) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895762
+Prediction: DOG
+Expected: CAT
+
+=== Image 18 (src 18) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895708
+Prediction: DOG
+Expected: DOG
+
+=== Image 19 (src 19) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895713
+Prediction: CAT
+Expected: CAT
+
+=== Image 20 (src 20) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895686
+Prediction: CAT
+Expected: CAT
+
+=== Image 21 (src 21) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895725
+Prediction: CAT
+Expected: CAT
+
+=== Image 22 (src 22) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214995
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895566
+Prediction: CAT
+Expected: CAT
+
+=== Image 23 (src 23) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895754
+Prediction: CAT
+Expected: CAT
+
+=== Image 24 (src 24) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895687
+Prediction: CAT
+Expected: DOG
+
+=== Image 25 (src 25) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Prediction: DOG
+Expected: DOG
+
+=== Image 26 (src 26) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895718
+Prediction: CAT
+Expected: CAT
+
+=== Image 27 (src 27) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895781
+Prediction: DOG
+Expected: DOG
+
+=== Image 28 (src 28) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895688
+Prediction: CAT
+Expected: DOG
+
+=== Image 29 (src 29) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895656
+Prediction: CAT
+Expected: DOG
+
+=== Image 30 (src 30) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895680
+Prediction: DOG
+Expected: DOG
+
+=== Image 31 (src 31) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895661
+Prediction: CAT
+Expected: CAT
+
+=== Image 32 (src 32) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214981
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895678
+Prediction: CAT
+Expected: DOG
+
+=== Image 33 (src 33) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895672
+Prediction: DOG
+Expected: DOG
+
+=== Image 34 (src 34) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895616
+Prediction: DOG
+Expected: CAT
+
+=== Image 35 (src 35) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895688
+Prediction: CAT
+Expected: CAT
+
+=== Image 36 (src 36) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895674
+Prediction: CAT
+Expected: DOG
+
+=== Image 37 (src 37) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895664
+Prediction: CAT
+Expected: DOG
+
+=== Image 38 (src 38) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895562
+Prediction: CAT
+Expected: CAT
+
+=== Image 39 (src 39) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Prediction: DOG
+Expected: DOG
+
+=== Image 40 (src 40) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895653
+Prediction: DOG
+Expected: DOG
+
+=== Image 41 (src 41) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895744
+Prediction: CAT
+Expected: CAT
+
+=== Image 42 (src 42) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895733
+Prediction: DOG
+Expected: DOG
+
+=== Image 43 (src 43) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895784
+Prediction: DOG
+Expected: DOG
+
+=== Image 44 (src 44) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Prediction: DOG
+Expected: DOG
+
+=== Image 45 (src 45) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895700
+Prediction: CAT
+Expected: DOG
+
+=== Image 46 (src 46) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895733
+Prediction: CAT
+Expected: CAT
+
+=== Image 47 (src 47) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895648
+Prediction: DOG
+Expected: DOG
+
+=== Image 48 (src 48) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895741
+Prediction: CAT
+Expected: CAT
+
+=== Image 49 (src 49) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895752
+Prediction: CAT
+Expected: CAT
+
+=== Image 50 (src 50) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895652
+Prediction: DOG
+Expected: DOG
+
+=== Image 51 (src 51) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895651
+Prediction: CAT
+Expected: CAT
+
+=== Image 52 (src 52) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895680
+Prediction: CAT
+Expected: CAT
+
+=== Image 53 (src 53) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895673
+Prediction: DOG
+Expected: DOG
+
+=== Image 54 (src 54) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895767
+Prediction: DOG
+Expected: CAT
+
+=== Image 55 (src 55) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895732
+Prediction: CAT
+Expected: CAT
+
+=== Image 56 (src 56) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895743
+Prediction: CAT
+Expected: CAT
+
+=== Image 57 (src 57) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895665
+Prediction: CAT
+Expected: CAT
+
+=== Image 58 (src 58) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895741
+Prediction: DOG
+Expected: DOG
+
+=== Image 59 (src 59) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895734
+Prediction: DOG
+Expected: DOG
+
+=== Image 60 (src 60) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895575
+Prediction: CAT
+Expected: CAT
+
+=== Image 61 (src 61) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895681
+Prediction: CAT
+Expected: DOG
+
+=== Image 62 (src 62) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895581
+Prediction: DOG
+Expected: CAT
+
+=== Image 63 (src 63) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895659
+Prediction: CAT
+Expected: DOG
+
+=== Image 64 (src 64) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214981
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895650
+Prediction: CAT
+Expected: CAT
+
+=== Image 65 (src 65) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895678
+Prediction: CAT
+Expected: CAT
+
+=== Image 66 (src 66) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895702
+Prediction: DOG
+Expected: DOG
+
+=== Image 67 (src 67) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895736
+Prediction: DOG
+Expected: DOG
+
+=== Image 68 (src 68) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895448
+Prediction: DOG
+Expected: CAT
+
+=== Image 69 (src 69) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895699
+Prediction: DOG
+Expected: DOG
+
+=== Image 70 (src 70) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895727
+Prediction: CAT
+Expected: CAT
+
+=== Image 71 (src 71) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895659
+Prediction: DOG
+Expected: DOG
+
+=== Image 72 (src 72) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895649
+Prediction: CAT
+Expected: CAT
+
+=== Image 73 (src 73) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895680
+Prediction: CAT
+Expected: CAT
+
+=== Image 74 (src 74) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895665
+Prediction: DOG
+Expected: CAT
+
+=== Image 75 (src 75) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895713
+Prediction: DOG
+Expected: CAT
+
+=== Image 76 (src 76) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895680
+Prediction: CAT
+Expected: DOG
+
+=== Image 77 (src 77) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895786
+Prediction: CAT
+Expected: CAT
+
+=== Image 78 (src 78) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895618
+Prediction: DOG
+Expected: DOG
+
+=== Image 79 (src 79) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895686
+Prediction: CAT
+Expected: CAT
+
+=== Image 80 (src 80) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895753
+Prediction: CAT
+Expected: CAT
+
+=== Image 81 (src 81) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895717
+Prediction: DOG
+Expected: DOG
+
+=== Image 82 (src 82) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214994
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895750
+Prediction: CAT
+Expected: CAT
+
+=== Image 83 (src 83) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895679
+Prediction: DOG
+Expected: DOG
+
+=== Image 84 (src 84) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212482
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895568
+Prediction: DOG
+Expected: DOG
+
+=== Image 85 (src 85) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895565
+Prediction: CAT
+Expected: CAT
+
+=== Image 86 (src 86) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895719
+Prediction: CAT
+Expected: CAT
+
+=== Image 87 (src 87) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895769
+Prediction: DOG
+Expected: DOG
+
+=== Image 88 (src 88) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895752
+Prediction: CAT
+Expected: DOG
+
+=== Image 89 (src 89) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895649
+Prediction: CAT
+Expected: CAT
+
+=== Image 90 (src 90) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212495
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895676
+Prediction: CAT
+Expected: CAT
+
+=== Image 91 (src 91) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895684
+Prediction: CAT
+Expected: CAT
+
+=== Image 92 (src 92) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895715
+Prediction: CAT
+Expected: DOG
+
+=== Image 93 (src 93) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895683
+Prediction: DOG
+Expected: DOG
+
+=== Image 94 (src 94) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895736
+Prediction: DOG
+Expected: DOG
+
+=== Image 95 (src 95) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895687
+Prediction: DOG
+Expected: DOG
+
+=== Image 96 (src 96) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212481
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895661
+Prediction: DOG
+Expected: DOG
+
+=== Image 97 (src 97) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895728
+Prediction: CAT
+Expected: DOG
+
+=== Image 98 (src 98) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212494
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895577
+Prediction: DOG
+Expected: DOG
+
+=== Image 99 (src 99) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895695
+Prediction: DOG
+Expected: DOG
+
+=== Image 100 (src 100) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895682
+Prediction: CAT
+Expected: CAT
+
+=== Image 101 (src 101) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895748
+Prediction: CAT
+Expected: DOG
+
+=== Image 102 (src 102) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895652
+Prediction: DOG
+Expected: DOG
+
+=== Image 103 (src 103) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895715
+Prediction: DOG
+Expected: DOG
+
+=== Image 104 (src 104) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895652
+Prediction: DOG
+Expected: DOG
+
+=== Image 105 (src 105) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895627
+Prediction: DOG
+Expected: DOG
+
+=== Image 106 (src 106) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895729
+Prediction: DOG
+Expected: DOG
+
+=== Image 107 (src 107) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895668
+Prediction: DOG
+Expected: DOG
+
+=== Image 108 (src 108) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895527
+Prediction: DOG
+Expected: DOG
+
+=== Image 109 (src 109) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895668
+Prediction: CAT
+Expected: DOG
+
+=== Image 110 (src 110) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895745
+Prediction: CAT
+Expected: CAT
+
+=== Image 111 (src 111) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895698
+Prediction: CAT
+Expected: CAT
+
+=== Image 112 (src 112) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895666
+Prediction: CAT
+Expected: CAT
+
+=== Image 113 (src 113) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895677
+Prediction: CAT
+Expected: DOG
+
+=== Image 114 (src 114) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895662
+Prediction: CAT
+Expected: CAT
+
+=== Image 115 (src 115) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895711
+Prediction: DOG
+Expected: CAT
+
+=== Image 116 (src 116) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895712
+Prediction: CAT
+Expected: DOG
+
+=== Image 117 (src 117) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895698
+Prediction: CAT
+Expected: CAT
+
+=== Image 118 (src 118) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895606
+Prediction: DOG
+Expected: DOG
+
+=== Image 119 (src 119) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895685
+Prediction: CAT
+Expected: CAT
+
+=== Image 120 (src 120) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895767
+Prediction: DOG
+Expected: CAT
+
+=== Image 121 (src 121) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895723
+Prediction: DOG
+Expected: DOG
+
+=== Image 122 (src 122) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895694
+Prediction: DOG
+Expected: DOG
+
+=== Image 123 (src 123) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895686
+Prediction: CAT
+Expected: CAT
+
+=== Image 124 (src 124) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895706
+Prediction: CAT
+Expected: DOG
+
+=== Image 125 (src 125) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895709
+Prediction: CAT
+Expected: DOG
+
+=== Image 126 (src 126) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895749
+Prediction: CAT
+Expected: CAT
+
+=== Image 127 (src 127) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895728
+Prediction: CAT
+Expected: CAT
+
+=== Image 128 (src 128) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895763
+Prediction: DOG
+Expected: DOG
+
+=== Image 129 (src 129) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895660
+Prediction: CAT
+Expected: CAT
+
+=== Image 130 (src 130) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895702
+Prediction: CAT
+Expected: DOG
+
+=== Image 131 (src 131) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895781
+Prediction: CAT
+Expected: CAT
+
+=== Image 132 (src 132) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895656
+Prediction: DOG
+Expected: CAT
+
+=== Image 133 (src 133) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895700
+Prediction: CAT
+Expected: CAT
+
+=== Image 134 (src 134) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895688
+Prediction: CAT
+Expected: CAT
+
+=== Image 135 (src 135) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895733
+Prediction: CAT
+Expected: CAT
+
+=== Image 136 (src 136) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895689
+Prediction: DOG
+Expected: DOG
+
+=== Image 137 (src 137) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895670
+Prediction: CAT
+Expected: CAT
+
+=== Image 138 (src 138) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895598
+Prediction: CAT
+Expected: CAT
+
+=== Image 139 (src 139) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895704
+Prediction: CAT
+Expected: CAT
+
+=== Image 140 (src 140) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895663
+Prediction: DOG
+Expected: DOG
+
+=== Image 141 (src 141) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895746
+Prediction: CAT
+Expected: CAT
+
+=== Image 142 (src 142) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895655
+Prediction: CAT
+Expected: CAT
+
+=== Image 143 (src 143) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Prediction: CAT
+Expected: CAT
+
+=== Image 144 (src 144) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895696
+Prediction: CAT
+Expected: DOG
+
+=== Image 145 (src 145) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895685
+Prediction: DOG
+Expected: CAT
+
+=== Image 146 (src 146) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895664
+Prediction: CAT
+Expected: DOG
+
+=== Image 147 (src 147) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895690
+Prediction: CAT
+Expected: CAT
+
+=== Image 148 (src 148) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895624
+Prediction: CAT
+Expected: DOG
+
+=== Image 149 (src 149) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895780
+Prediction: DOG
+Expected: DOG
+
+=== Image 150 (src 150) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895676
+Prediction: CAT
+Expected: CAT
+
+=== Image 151 (src 151) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895642
+Prediction: CAT
+Expected: CAT
+
+=== Image 152 (src 152) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895617
+Prediction: CAT
+Expected: CAT
+
+=== Image 153 (src 153) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895612
+Prediction: CAT
+Expected: DOG
+
+=== Image 154 (src 154) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895653
+Prediction: DOG
+Expected: CAT
+
+=== Image 155 (src 155) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895764
+Prediction: CAT
+Expected: DOG
+
+=== Image 156 (src 156) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895747
+Prediction: CAT
+Expected: CAT
+
+=== Image 157 (src 157) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895755
+Prediction: CAT
+Expected: CAT
+
+=== Image 158 (src 158) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895697
+Prediction: DOG
+Expected: DOG
+
+=== Image 159 (src 159) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895671
+Prediction: CAT
+Expected: CAT
+
+=== Image 160 (src 160) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895664
+Prediction: CAT
+Expected: CAT
+
+=== Image 161 (src 161) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895659
+Prediction: DOG
+Expected: DOG
+
+=== Image 162 (src 162) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895716
+Prediction: CAT
+Expected: CAT
+
+=== Image 163 (src 163) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895782
+Prediction: CAT
+Expected: CAT
+
+=== Image 164 (src 164) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895664
+Prediction: CAT
+Expected: CAT
+
+=== Image 165 (src 165) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Prediction: CAT
+Expected: CAT
+
+=== Image 166 (src 166) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895625
+Prediction: CAT
+Expected: CAT
+
+=== Image 167 (src 167) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895778
+Prediction: CAT
+Expected: CAT
+
+=== Image 168 (src 168) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895600
+Prediction: CAT
+Expected: CAT
+
+=== Image 169 (src 169) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895697
+Prediction: CAT
+Expected: CAT
+
+=== Image 170 (src 170) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895766
+Prediction: CAT
+Expected: CAT
+
+=== Image 171 (src 171) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895725
+Prediction: CAT
+Expected: CAT
+
+=== Image 172 (src 172) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895696
+Prediction: DOG
+Expected: DOG
+
+=== Image 173 (src 173) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895688
+Prediction: DOG
+Expected: DOG
+
+=== Image 174 (src 174) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895694
+Prediction: DOG
+Expected: DOG
+
+=== Image 175 (src 175) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895730
+Prediction: CAT
+Expected: CAT
+
+=== Image 176 (src 176) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895632
+Prediction: CAT
+Expected: CAT
+
+=== Image 177 (src 177) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 214988
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895795
+Prediction: DOG
+Expected: DOG
+
+=== Image 178 (src 178) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895693
+Prediction: CAT
+Expected: DOG
+
+=== Image 179 (src 179) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895803
+Prediction: CAT
+Expected: CAT
+
+=== Image 180 (src 180) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895588
+Prediction: DOG
+Expected: DOG
+
+=== Image 181 (src 181) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895672
+Prediction: DOG
+Expected: CAT
+
+=== Image 182 (src 182) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895778
+Prediction: CAT
+Expected: CAT
+
+=== Image 183 (src 183) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895671
+Prediction: CAT
+Expected: CAT
+
+=== Image 184 (src 184) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895711
+Prediction: CAT
+Expected: CAT
+
+=== Image 185 (src 185) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895710
+Prediction: CAT
+Expected: CAT
+
+=== Image 186 (src 186) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895687
+Prediction: DOG
+Expected: DOG
+
+=== Image 187 (src 187) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895734
+Prediction: DOG
+Expected: CAT
+
+=== Image 188 (src 188) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895740
+Prediction: CAT
+Expected: CAT
+
+=== Image 189 (src 189) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895663
+Prediction: CAT
+Expected: DOG
+
+=== Image 190 (src 190) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895696
+Prediction: CAT
+Expected: CAT
+
+=== Image 191 (src 191) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895646
+Prediction: DOG
+Expected: DOG
+
+=== Image 192 (src 192) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895654
+Prediction: CAT
+Expected: CAT
+
+=== Image 193 (src 193) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895686
+Prediction: DOG
+Expected: DOG
+
+=== Image 194 (src 194) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212501
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895721
+Prediction: CAT
+Expected: CAT
+
+=== Image 195 (src 195) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895680
+Prediction: CAT
+Expected: CAT
+
+=== Image 196 (src 196) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: CAT
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895612
+Prediction: CAT
+Expected: CAT
+
+=== Image 197 (src 197) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895750
+Prediction: DOG
+Expected: DOG
+
+=== Image 198 (src 198) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 215001
+Modeled accelerator cycles: 156838
+Prediction: CAT
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895717
+Prediction: CAT
+Expected: DOG
+
+=== Image 199 (src 199) ===
+--- Renode-Modeled Accelerator (simulated) ---
+[ACCEL_SIM] Cycles: 212488
+Modeled accelerator cycles: 156838
+Prediction: DOG
+Expected: DOG
+
+--- Software Only (Renode timing) ---
+[SW_ONLY]  Cycles: 2895752
+Prediction: DOG
+Expected: DOG
+
+=== Average Benchmark Summary ===
+Images: 200
+Average accelerator cycles: 212893
+Average software cycles: 2895690
+Software average latency: 115.827 ms
+Software average FPS: 8.633
+Accelerator average latency: 8.515 ms
+Accelerator average FPS: 117.429
+Average modeled accelerator cycles: 156838
+Average BRAM accesses: 6146
+Accelerator accuracy: 153/200
+Software accuracy: 153/200
+Done.

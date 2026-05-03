@@ -1,0 +1,2 @@
+dataset_size,macs_per_cycle,avg_cycles_accel,avg_cycles_sw,speedup,accuracy,accuracy_ci_low,accuracy_ci_high,accuracy_sw,accuracy_sw_ci_low,accuracy_sw_ci_high,simulated_latency_ms_accel,simulated_latency_ms_sw
+100,4,212789.670,2895682.840,13.608193,71.000,61.461,78.985,71.000,61.461,78.985,8.511587,115.827314

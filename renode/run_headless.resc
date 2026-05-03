@@ -1,0 +1,7 @@
+include @./ecp5_platform.repl
+mach set 0
+sysbus LoadELF @../firmware/catdog_inference.elf
+sysbus LoadBinary @./test_images.bin 0x00100000
+sysbus.uart CreateFileBackend "/tmp/ai_classification_renode_manual_uart.txt" true
+sysbus.uart AddLineHook "Done." "monitor.Parse('pause'); monitor.Parse('quit')"
+log "Platform loaded. Use 'start' to begin emulation."

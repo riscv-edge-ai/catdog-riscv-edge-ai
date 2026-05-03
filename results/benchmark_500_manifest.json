@@ -1,0 +1,42 @@
+{
+  "benchmark_csv": "results/benchmark_500.csv",
+  "source_uart_logs": [
+    {
+      "uart_log": "results/chunked/renode_direct_uart_offset_0000_count_0200_mpc_4.txt",
+      "uart_sha256": "ceaa2b0e52dbf9cf556ecce9e7c799027ee11f7e7706d39afcd0a6e00974b6b7",
+      "metadata_json": "results/chunked/renode_direct_uart_offset_0000_count_0200_mpc_4.txt.json",
+      "dataset_count": 200,
+      "dataset_offset": 0,
+      "macs_per_cycle": 4,
+      "avg_accel_cycles_from_rows": 212893.32,
+      "avg_sw_cycles_from_rows": 2895690.795
+    },
+    {
+      "uart_log": "results/chunked/renode_direct_uart_offset_0200_count_0200_mpc_4.txt",
+      "uart_sha256": "2699abb477b960235817ec1f795e56b631aadb3c2484ec2158742147d89c2491",
+      "metadata_json": "results/chunked/renode_direct_uart_offset_0200_count_0200_mpc_4.txt.json",
+      "dataset_count": 200,
+      "dataset_offset": 200,
+      "macs_per_cycle": 4,
+      "avg_accel_cycles_from_rows": 212868.35,
+      "avg_sw_cycles_from_rows": 2895683.715
+    },
+    {
+      "uart_log": "results/chunked/renode_direct_uart_offset_0400_count_0100_mpc_4.txt",
+      "uart_sha256": "ffafe96e7e9e641d50a176a0960b0b12c007b7519af54d9a92431fff5c3bf522",
+      "metadata_json": "results/chunked/renode_direct_uart_offset_0400_count_0100_mpc_4.txt.json",
+      "dataset_count": 100,
+      "dataset_offset": 400,
+      "macs_per_cycle": 4,
+      "avg_accel_cycles_from_rows": 212789.67,
+      "avg_sw_cycles_from_rows": 2895682.84
+    }
+  ],
+  "row_count": 500,
+  "avg_accel_cycles_from_rows": 212862.602,
+  "avg_sw_cycles_from_rows": 2895686.372,
+  "notes": [
+    "benchmark_500.csv is aggregated from multiple chunked Renode UART runs",
+    "each chunk is a real rerun with preserved UART and explicit dataset offset metadata"
+  ]
+}

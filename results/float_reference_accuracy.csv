@@ -1,0 +1,2 @@
+dataset_size,float_accuracy,float_accuracy_ci_low,float_accuracy_ci_high
+500,73.6,69.56691427151993,77.27321685869481

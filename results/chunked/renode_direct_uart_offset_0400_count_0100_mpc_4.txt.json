@@ -1,0 +1,6 @@
+{
+  "uart_log": "results/chunked/renode_direct_uart_offset_0400_count_0100_mpc_4.txt",
+  "dataset_count": 100,
+  "dataset_offset": 400,
+  "macs_per_cycle": 4
+}

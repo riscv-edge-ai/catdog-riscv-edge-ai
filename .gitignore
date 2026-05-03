@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+venv/
+.venv/
+env/
+
+# Datasets and downloaded archives
+data/
+*.tar.gz
+
+# Generated duplicate checkpoint directory; keep best_catdog.pth instead.
+best_catdog/
+
+# Firmware build outputs
+firmware/*.elf
+firmware/src/*.o
+
+# Generated Renode/runtime files
+renode/test_images.bin
+renode/eval_images.bin
+results/.~lock.*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
